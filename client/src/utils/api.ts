@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = "https://backend-571e.onrender.com/api";
 
 export async function api(path: string, options = {}) {
   const res = await fetch(`${API_BASE}${path}`, {
