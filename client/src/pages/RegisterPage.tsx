@@ -47,6 +47,12 @@ export default function Register({ onLogin }: RegisterProps) {
         <button className="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700">
           Register
         </button>
+        <p className="text-sm text-gray-600 mt-4">
+          Already have an account?{" "}
+          <a href="/login" className="text-blue-600 hover:underline">
+            Login
+          </a>
+        </p>
       </form>
     </div>
   );

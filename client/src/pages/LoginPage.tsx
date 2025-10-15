@@ -47,6 +47,12 @@ export default function Login({ onLogin }: LoginProps) {
         <button className="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700">
           Login
         </button>
+        <p className="text-sm text-gray-600 mt-4">
+          Don't have an account?{" "}
+          <a href="/register" className="text-blue-600 hover:underline">
+            Register
+          </a>
+        </p>
       </form>
     </div>
   );

@@ -27,6 +27,18 @@ export default function Home({ user }: { user: User | null }) {
     const handleStart = async (e: React.FormEvent<HTMLFormElement>): Promise<void> => {
         e.preventDefault();
         try {
+            if (!startValue) {
+                alert("Please enter a starting value.");
+                return;
+            }
+            if (isNaN(Number(startValue))) {
+                alert("Starting value must be a number.");
+                return;
+            }
+            if (!user) {
+                alert("You must be logged in to start a calculation.");
+                return;
+            }
             await api("/posts", {
                 method: "POST",
                 body: JSON.stringify({ value: parseFloat(startValue) }),
