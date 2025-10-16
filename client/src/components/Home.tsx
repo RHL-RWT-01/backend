@@ -77,6 +77,9 @@ export default function Home({ user }: { user: User | null }) {
             )}
 
             <TreeView data={posts} user={user} refresh={loadPosts} />
+            <div className="text-center text-gray-500 text-sm mt-10 ">
+                &copy; 2025 CalcChain. All rights reserved.
+            </div>
         </div>
     );
 }
