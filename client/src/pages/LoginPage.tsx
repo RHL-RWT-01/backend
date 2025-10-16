@@ -44,7 +44,7 @@ export default function Login({ onLogin }: LoginProps) {
           onChange={e => setForm({ ...form, password: e.target.value })}
         />
         {error && <p className="text-red-500 mb-2">{error}</p>}
-        <button className="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700">
+        <button className="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700 cursor-pointer">
           Login
         </button>
         <p className="text-sm text-gray-600 mt-4">
