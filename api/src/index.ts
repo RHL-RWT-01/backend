@@ -9,7 +9,7 @@ import postRoutes from "./routes/post.routes";
 
 const app = express();
 
-app.use(cors({ credentials: true, origin: process.env.CLIENT_URL || "http://localhost:5173" }));
+app.use(cors({ credentials: true, origin: process.env.CLIENT_URL || "https://backend-topaz-nine-66.vercel.app" }));
 app.use(express.json());
 app.use(logger);
 app.use(cookieParser());
